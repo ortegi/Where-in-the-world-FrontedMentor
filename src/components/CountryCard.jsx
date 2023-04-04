@@ -1,6 +1,6 @@
 const CountryCard = ({country, population, region, capital, flag}) => {
   return (
-    <div className="bg-white shadow text-sm text-gray-800 mx-9 my-4 w-64 rounded dark:bg-[#2b3945] dark:text-white">
+    <div className="bg-white shadow text-sm text-gray-800 mx-9 my-4 w-64 rounded dark:bg-[#2b3945] dark:text-white transition-all duration-1000">
       <img src={flag} style={{ width: 258, height: 150 }} className="shadow" />
       <div className="py-7 px-4">
         <h1 className="font-bold mb-3 text-lg">{country} </h1>

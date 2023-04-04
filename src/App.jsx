@@ -22,7 +22,7 @@ const App = () => {
   },[darkMode])
 
   return (
-    <div className="bg-[#f7f0f5] min-h-screen dark:bg-[#202c37]"	>
+    <div className="bg-[#f7f0f5] min-h-screen dark:bg-[#202c37] transition-all duration-1000"	>
       <Header darkMode={darkMode} setdarkMode={setdarkMode} />
       <Routes>
         <Route element={<AllCountries darkMode={darkMode} setdarkMode={setdarkMode} />} path="/">

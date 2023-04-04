@@ -21,7 +21,7 @@ const CountryCardDetails = ({ item }) => {
     <div className="flex mt-12 md:justify-start flex-col md:flex-row">
       <img src={item.flags.png} style={{ width: 318, height: 220 }} />
       <div className="md:ml-20 md:w-1/4 w-5/6 text-lg md:text-base mb-4">
-        <h1 className="font-bold text-2xl text-[#111517] dark:text-white md:mt-0 mt-10">
+        <h1 className="font-bold text-2xl text-[#111517] dark:text-white md:mt-0 mt-10 transition-all duration-1000">
           {item.name.common}{" "}
         </h1>
         <div className="flex py-4 md:justify-between flex-col md:flex-row ">
@@ -57,7 +57,7 @@ const CountryCardDetails = ({ item }) => {
             {
               border.length > 0 ? <div> 
                 <h6 className="font-bold">Borders</h6>
-                <ul className="flex py-3">{border.map(element => (<li key={element} className="bg-white dark:bg-[#2B3945] shadow rounded mr-2 px-2 py-1"> {element} </li>))} </ul> </div> : ''
+                <ul className="flex py-3">{border.map(element => (<li key={element} className="bg-white dark:bg-[#2B3945] transition-all duration-1000 shadow rounded mr-2 px-2 py-1"> {element} </li>))} </ul> </div> : ''
             }
         </div>
       </div>
