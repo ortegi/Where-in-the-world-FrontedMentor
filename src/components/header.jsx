@@ -1,15 +1,27 @@
+
 import IconMoon from "../emojis/IconMoon"
+import IconSun from "../emojis/IconSun";
+
+const Header = ({darkMode, setdarkMode}) => {
+
+  const handleClick = () => {
+    setdarkMode(!darkMode)
+  }
 
 
-const Header = () => {
+
   return (
-    <div className="h-15 p-5 flex justify-between items-center shadow rounded bg-white">
+    <div className="h-15 p-5 flex justify-between items-center shadow rounded bg-white dark:bg-[#2b3945] dark:text-white">
       <h1 className="font-bold text-lg">Where in the World?</h1>
-      <div className="flex justify-between items-center">
-        <IconMoon />
-        <p className="font-semibold text-gray-700 mx-2">DarkMode</p>
-      </div>
+      <button className="flex justify-between items-center" onClick={handleClick}>
+        {
+          darkMode ? <IconMoon/> : <IconSun/>
+        }
+        <p className="font-semibold text-[#111517] dark:text-white mx-2">DarkMode</p>
+      </button>
+
     </div>
+    
   );
 };
 
